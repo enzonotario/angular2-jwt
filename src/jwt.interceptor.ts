@@ -7,10 +7,9 @@ import {
 } from '@angular/common/http';
 import { JwtHelperService } from './jwthelper.service';
 import { JWT_OPTIONS } from './jwtoptions.token';
-import { Observable } from "rxjs/internal/Observable";
-import { from } from "rxjs/internal/observable/from";
 import { mergeMap } from 'rxjs/operators';
 import { parse } from 'url';
+import {from, Observable} from 'rxjs';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
